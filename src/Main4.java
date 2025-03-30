@@ -2,7 +2,6 @@ public class Main4 {
     public static void main(String[] args) {
         int n = 5;
         long start = System.nanoTime();
-        long result = factorial(n);
         long end = System.nanoTime();
         double timeTaken = (end - start) / 1e6;
         System.out.println(n);
