@@ -2,18 +2,18 @@ public class Main2 {
     public static void main(String[] args) {
         int[] numbers = {3, 2, 4, 1};
 
-        long startTime = System.nanoTime(); // Засекаем время
+        long start = System.nanoTime(); //  начало времени
 
-        double average = findAverage(numbers);
+        double avg = favg(numbers);
 
-        long endTime = System.nanoTime(); // Конец измерения
-        double timeTaken = (endTime - startTime) / 1e6; // Время в миллисекундах
+        long end = System.nanoTime(); // конец времени
+        double timeTaken = (end - start) / 1e6; // поменять на милисекунды
 
-        System.out.println("Average value is: " + average);
+        System.out.println("Avg value is: " + avg);
         System.out.println("Time taken: " + timeTaken + " milliseconds");
     }
 
-    public static double findAverage(int[] arr) {
+    public static double favg(int[] arr) {
         int sum = 0;
         for (int num : arr) {
             sum += num;
