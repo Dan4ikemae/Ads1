@@ -6,8 +6,8 @@ public class Main {
         int min = fmin(numbers);
         long end = System.nanoTime(); 
         double timeTaken = (end - start) / 1e6; 
-        System.out.println("Minimum value is: " + min);
-        System.out.println("Time taken: " + timeTaken + " milliseconds");
+        System.out.println(min);
+        System.out.println(timeTaken);
     }
     public static int fmin(int[] arr) {
         int min = arr[0];
